@@ -1,21 +1,29 @@
-import React, { Component } from 'react';
+// App.jsx
+ 
+import React from 'react';
 import logo from './logo.svg';
+// Import the BrowserRouter, Route and Link components
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+//import {Thumbnail} from "./Thumbnail.js" 
+import Projects from './Projects.js'; 
+import Contacts from './Contact.js'; 
+import About from './About.js'; 
+import Amnis from './Amnis.js';
 import './App.css';
-
-class App extends Component {
-  render() {
-    return (
+ 
+function App() {
+  return (
+    <BrowserRouter>
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+        <Route exact path="/" component={Projects} />
+        <Route path="/contacts" component={Contacts} />
+        <Route path="/about" component={About} />
+        <Route path="/Amnis" component={Amnis} />
+        
 
+      </div>
+    </BrowserRouter>
+  );
+}
+ 
 export default App;
