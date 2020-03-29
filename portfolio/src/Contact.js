@@ -7,20 +7,9 @@ import './App.css';
 function Contact(props) {
   return (
     <div class="footer-section">
-      <footer>
-        <img class ="center" width="150" height="150" src = {require('./tejasLogo/logo_transparent.png')}></img>
-        <p>Created by: Tejas Manjunath</p>
-        <p>Contact information: <a href="mailto:someone@example.com">manjunathtej4s@gmail.com</a>.
-        <br></br>
-        Phone: 1(408)425-1550</p>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-
-<a href="https://www.linkedin.com/in/tejas-manjunath-18a442156/" class="fa fa-linkedin"></a>
-<a href="https://github.com/ManjunathTejas" class="fa fa-github"></a>
-
-
-      </footer>
+        <img class ="center" width="100" height="100" src = {require('./tejasLogo/logo_transparent.png')}></img>
+        <p >Email: <a href="mailto:someone@example.com">manjunathtej4s@gmail.com</a>.
+        </p>
     </div>
   )
 }

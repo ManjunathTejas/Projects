@@ -3,7 +3,7 @@
 import React from 'react';
 import logo from './logo.svg';
 // Import the BrowserRouter, Route and Link components
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, HashRouter } from 'react-router-dom';
 //import {Thumbnail} from "./Thumbnail.js" 
 import Projects from './Projects.js'; 
 import Contacts from './Contact.js'; 
